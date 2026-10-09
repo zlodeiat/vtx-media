@@ -12,6 +12,30 @@
 
 **Scope:** This repository contains the **Core** plugin, not the separately distributed Pro extension. Despite the historical plugin display name, Core 1.5.0 does **not** implement image compression or AI image generation. See `readme.txt` for precise feature scope.
 
+## Screenshots
+
+### Media Library
+
+A React-powered workspace for organizing WordPress
+attachments with virtual folders, favorites, search,
+filtering, and bulk actions.
+
+![VTX Media Library](docs/screenshots/library-images.png)
+
+### Media Health
+
+Incremental media auditing for metadata quality,
+accessibility, file integrity, and performance-related issues.
+
+![VTX Media Health](docs/screenshots/media-health.png)
+
+### Advanced Audit Rules
+
+Inspect registered audit rules, categories, severity levels,
+and the purpose of each check.
+
+![VTX Media Audit Rules](docs/screenshots/advanced-audit-rules.png)
+
 ## Requirements
 
 - WordPress 6.5+
