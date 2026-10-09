@@ -1,0 +1,1994 @@
+# Copyright (C) 2026 VTX Labs
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: VTX Media – Media Library Manager & Optimizer 1.2.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/vtx-media\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-09-14T01:46:10+03:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: vtx-media\n"
+
+#. Plugin Name of the plugin
+#: vtx-media.php
+msgid "VTX Media – Media Library Manager & Optimizer"
+msgstr ""
+
+#. Description of the plugin
+#: vtx-media.php
+msgid "Organize your WordPress media with virtual folders, personal favorites and a complete media inspector."
+msgstr ""
+
+#. Author of the plugin
+#: vtx-media.php
+msgid "VTX Labs"
+msgstr ""
+
+#: app/Admin/Page.php:31
+#: app/Admin/Page.php:32
+msgid "VTX Media"
+msgstr ""
+
+#: app/Admin/Page.php:89
+#: app/Api/RouteRegistrar.php:24
+msgid "You cannot access this media library."
+msgstr ""
+
+#: app/Admin/Page.php:96
+msgid "Loading your media library…"
+msgstr ""
+
+#: app/Admin/Page.php:99
+msgid "VTX Media requires JavaScript. The standard WordPress Media Library remains available."
+msgstr ""
+
+#: app/Api/AdvancedController.php:85
+msgid "Unknown scan type."
+msgstr ""
+
+#: app/Api/AuditController.php:52
+msgid "Unknown rule."
+msgstr ""
+
+#: app/Api/AuditController.php:173
+msgid "Invalid settings."
+msgstr ""
+
+#: app/Api/Controller.php:142
+msgid "Provide metadata to update."
+msgstr ""
+
+#: app/Api/Controller.php:236
+#: app/Folders/FolderRepository.php:148
+#: app/Folders/FolderRepository.php:209
+msgid "Folder not found."
+msgstr ""
+
+#: app/Api/RouteRegistrar.php:34
+msgid "Your session expired. Refresh the page and try again."
+msgstr ""
+
+#: app/Api/RouteRegistrar.php:73
+msgid "This feature is not available."
+msgstr ""
+
+#: app/Api/RouteRegistrar.php:85
+msgid "The request could not be completed. Please try again."
+msgstr ""
+
+#: app/Audit/AuditActions.php:66
+msgid "Attachment is missing or you cannot edit it."
+msgstr ""
+
+#: app/Audit/AuditActions.php:83
+msgid "Decorative intent applies to images only."
+msgstr ""
+
+#: app/Audit/AuditActions.php:106
+msgid "ALT could not be cleared. Decorative intent was not saved."
+msgstr ""
+
+#: app/Audit/AuditActions.php:130
+msgid "Decorative intent could not be saved."
+msgstr ""
+
+#: app/Audit/AuditActions.php:152
+msgid "Updated."
+msgstr ""
+
+#: app/Audit/AuditActions.php:153
+msgid "Analysis is incomplete; review diagnostics."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:119
+msgid "Attachment cannot be analyzed."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:289
+msgid "Audit could not be saved."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:348
+msgid "Retired rule"
+msgstr ""
+
+#: app/Audit/AuditEngine.php:349
+msgid "The extension providing this rule is unavailable."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:371
+msgid "Invalid finding status."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:384
+#: app/Audit/AuditEngine.php:402
+msgid "Finding not found."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:409
+msgid "This finding has already resolved. Re-scan to refresh it."
+msgstr ""
+
+#: app/Audit/AuditEngine.php:450
+msgid "Finding status could not be saved."
+msgstr ""
+
+#: app/Audit/AuditRuleRegistry.php:123
+msgid "Rule presentation unavailable"
+msgstr ""
+
+#: app/Audit/AuditRuleRegistry.php:124
+msgid "An extension could not present this finding. Its evidence remains available."
+msgstr ""
+
+#: app/Audit/AuditRuleRegistry.php:128
+msgid "Review the extension providing this rule."
+msgstr ""
+
+#: app/Audit/Rules/ExcessiveDimensionsRule.php:31
+msgid "Large pixel dimensions"
+msgstr ""
+
+#: app/Audit/Rules/ExcessiveDimensionsRule.php:32
+msgid "The image exceeds a configured dimension threshold. This may be appropriate for its intended use."
+msgstr ""
+
+#: app/Audit/Rules/ExcessiveDimensionsRule.php:36
+msgid "Review whether these dimensions are needed. Originals remain unchanged."
+msgstr ""
+
+#: app/Audit/Rules/FilenameAsAltRule.php:26
+msgid "ALT resembles the filename"
+msgstr ""
+
+#: app/Audit/Rules/FilenameAsAltRule.php:27
+msgid "The normalized ALT and filename match. This mechanical comparison does not understand the image."
+msgstr ""
+
+#: app/Audit/Rules/FilenameAsAltRule.php:31
+msgid "Review whether the ALT conveys the intended information."
+msgstr ""
+
+#: app/Audit/Rules/GenericAltRule.php:23
+msgid "Generic ALT — review recommended"
+msgstr ""
+
+#: app/Audit/Rules/GenericAltRule.php:24
+msgid "ALT contains only a basic generic label, optionally followed by a number."
+msgstr ""
+
+#: app/Audit/Rules/GenericAltRule.php:28
+msgid "Review the image purpose and edit ALT where useful."
+msgstr ""
+
+#: app/Audit/Rules/InvalidImageMetadataRule.php:45
+msgid "Image metadata needs review"
+msgstr ""
+
+#: app/Audit/Rules/InvalidImageMetadataRule.php:46
+msgid "Dimensions are missing, malformed or inconsistent with the readable image header."
+msgstr ""
+
+#: app/Audit/Rules/InvalidImageMetadataRule.php:50
+msgid "Check attachment metadata and the source file. Metadata is not regenerated automatically."
+msgstr ""
+
+#: app/Audit/Rules/LongAltRule.php:31
+msgid "Long ALT — review recommended"
+msgstr ""
+
+#: app/Audit/Rules/LongAltRule.php:32
+msgid "ALT exceeds the configured length review threshold. Length alone does not determine quality."
+msgstr ""
+
+#: app/Audit/Rules/LongAltRule.php:36
+msgid "Consider whether a concise alternative would convey the same information."
+msgstr ""
+
+#: app/Audit/Rules/MissingAltRule.php:20
+msgid "ALT not reviewed"
+msgstr ""
+
+#: app/Audit/Rules/MissingAltRule.php:21
+msgid "Empty ALT can be correct for decorative images. Review the intended purpose."
+msgstr ""
+
+#: app/Audit/Rules/MissingAltRule.php:25
+msgid "Edit ALT or deliberately mark this image decorative."
+msgstr ""
+
+#: app/Audit/Rules/MissingCaptionRule.php:20
+msgid "No caption"
+msgstr ""
+
+#: app/Audit/Rules/MissingCaptionRule.php:21
+msgid "Captions are optional and are not needed in every context."
+msgstr ""
+
+#: app/Audit/Rules/MissingCaptionRule.php:25
+msgid "Add a caption only when it would help readers."
+msgstr ""
+
+#: app/Audit/Rules/MissingDescriptionRule.php:20
+msgid "No description"
+msgstr ""
+
+#: app/Audit/Rules/MissingDescriptionRule.php:21
+msgid "Attachment descriptions are optional in many workflows."
+msgstr ""
+
+#: app/Audit/Rules/MissingDescriptionRule.php:25
+msgid "Add a description if your site or workflow uses it."
+msgstr ""
+
+#: app/Audit/Rules/MissingPhysicalFileRule.php:25
+msgid "Unable to verify storage source"
+msgstr ""
+
+#: app/Audit/Rules/MissingPhysicalFileRule.php:27
+msgid "Physical file review"
+msgstr ""
+
+#: app/Audit/Rules/MissingPhysicalFileRule.php:28
+msgid "Original media file missing"
+msgstr ""
+
+#: app/Audit/Rules/MissingPhysicalFileRule.php:29
+msgid "The local attachment or original file is missing, or its storage source cannot be safely verified. Unknown storage is not classified as broken."
+msgstr ""
+
+#: app/Audit/Rules/MissingPhysicalFileRule.php:33
+msgid "Check the original upload or storage integration. No files are changed."
+msgstr ""
+
+#: app/Audit/Rules/MissingTitleRule.php:30
+msgid "Review media title"
+msgstr ""
+
+#: app/Audit/Rules/MissingTitleRule.php:31
+msgid "The title is empty or appears to retain an automatically generated filename."
+msgstr ""
+
+#: app/Audit/Rules/MissingTitleRule.php:35
+msgid "A useful title can make media easier to find."
+msgstr ""
+
+#: app/Audit/Rules/OversizedFileRule.php:32
+msgid "Very large image file"
+msgstr ""
+
+#: app/Audit/Rules/OversizedFileRule.php:33
+msgid "Large image file"
+msgstr ""
+
+#: app/Audit/Rules/OversizedFileRule.php:34
+msgid "This image exceeds the configured file-size review threshold. Large files can be intentional."
+msgstr ""
+
+#: app/Audit/Rules/OversizedFileRule.php:38
+msgid "Review delivery size for its intended use. Optimization is not performed."
+msgstr ""
+
+#: app/Audit/Rules/PoorFilenameRule.php:25
+msgid "Filename could be more descriptive"
+msgstr ""
+
+#: app/Audit/Rules/PoorFilenameRule.php:26
+msgid "The filename resembles a camera default, download label, screenshot label, UUID or hash."
+msgstr ""
+
+#: app/Audit/Rules/PoorFilenameRule.php:30
+msgid "Use descriptive filenames for future uploads. Existing files are not renamed."
+msgstr ""
+
+#: app/Audit/Settings.php:29
+msgid "Unknown audit setting."
+msgstr ""
+
+#: app/Audit/Settings.php:49
+msgid "Audit thresholds are outside the supported range."
+msgstr ""
+
+#: app/Audit/Settings.php:60
+msgid "Very large must exceed the large file threshold."
+msgstr ""
+
+#: app/Audit/Settings.php:71
+msgid "Settings could not be saved."
+msgstr ""
+
+#: app/Database/Lock.php:17
+msgid "This operation is busy. Please retry shortly."
+msgstr ""
+
+#: app/Database/Mutation.php:19
+msgid "The library is busy. Please try again."
+msgstr ""
+
+#: app/Database/Mutation.php:34
+msgid "The change could not be saved. Please try again."
+msgstr ""
+
+#: app/Database/Schema.php:34
+msgid "Please activate VTX Media individually on each site."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:73
+msgid "A folder cannot be moved into itself or its descendants."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:84
+msgid "The parent folder does not exist."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:92
+msgid "Folders support up to 32 levels."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:121
+msgid "This move would exceed 32 folder levels."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:138
+#: app/Folders/FolderRepository.php:199
+msgid "You cannot manage shared folders."
+msgstr ""
+
+#: app/Folders/FolderRepository.php:160
+msgid "Enter a folder name."
+msgstr ""
+
+#. translators: %s: Uploading user's display name.
+#: app/Jobs/JobRunner.php:63
+#, php-format
+msgid "Media uploaded by %s"
+msgstr ""
+
+#: app/Jobs/JobRunner.php:69
+msgid "Deleted user"
+msgstr ""
+
+#: app/Jobs/JobRunner.php:71
+msgid "All media"
+msgstr ""
+
+#: app/Jobs/JobRunner.php:108
+msgid "Unknown or unavailable job type."
+msgstr ""
+
+#: app/Jobs/JobRunner.php:131
+msgid "An audit is already active."
+msgstr ""
+
+#: app/Jobs/JobRunner.php:153
+msgid "Could not create scan."
+msgstr ""
+
+#: app/Jobs/JobRunner.php:170
+msgid "You cannot manage this scan."
+msgstr ""
+
+#: app/Jobs/JobRunner.php:185
+msgid "This scan cannot perform that action."
+msgstr ""
+
+#: app/Media/MediaRepository.php:152
+msgid "Media not found or inaccessible."
+msgstr ""
+
+#: app/Media/MediaRepository.php:206
+msgid "Unknown author"
+msgstr ""
+
+#: app/Media/MediaRepository.php:221
+msgid "Destination folder not found."
+msgstr ""
+
+#: app/Media/MediaRepository.php:229
+msgid "You cannot move one or more selected items."
+msgstr ""
+
+#: app/Media/MediaRepository.php:268
+msgid "You cannot favorite one or more selected items."
+msgstr ""
+
+#: app/Media/MediaRepository.php:300
+msgid "You cannot edit this attachment."
+msgstr ""
+
+#: app/Media/MediaRepository.php:338
+msgid "ALT could not be saved. Please retry."
+msgstr ""
+
+#: app/Plugin.php:25
+msgid "VTX Media could not initialize its database. Check database permissions and reactivate the plugin."
+msgstr ""
+
+#: app/Plugin.php:47
+#: assets/src/App.jsx:350
+msgid "Library"
+msgstr ""
+
+#: app/Plugin.php:52
+#: assets/src/audit/HealthSection.jsx:95
+#: assets/src/audit/IssueBrowser.jsx:238
+msgid "Health"
+msgstr ""
+
+#: app/Plugin.php:61
+#: assets/src/advanced/AdvancedScreen.jsx:317
+msgid "Advanced"
+msgstr ""
+
+#: app/Plugin.php:155
+msgid "VTX Media processing"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:26
+msgid "Loading diagnostics…"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:44
+#: assets/src/advanced/AdvancedScreen.jsx:292
+msgid "Developer"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:45
+msgid "System diagnostics"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:54
+msgid "Core database schema"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:59
+msgid "Developer Mode enabled. All registered development entitlements are available."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:63
+msgid "Developer Mode is disabled."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:72
+msgid "Copy is unavailable. Select the details below to copy them."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:80
+msgid "Copy diagnostics"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:82
+msgid "Diagnostics copied."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:86
+msgid "Registered modules"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:94
+msgid "Registered features"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:100
+msgid "Available"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:101
+msgid "Not entitled"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:121
+msgid "Scan logs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:131
+msgid "Problems only"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:143
+msgid "Scan ID"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:145
+#: assets/src/components/Inspector.jsx:341
+msgid "Attachment ID"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:147
+msgid "Rule"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:149
+msgid "Recorded"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:151
+msgid "Source / reason"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:163
+msgid "No scan problems or events match this view."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:167
+msgid "Latest"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:170
+msgid "Older events"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:186
+msgid "Scans & jobs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:188
+msgid "Refresh"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:206
+msgid "failures — view logs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:207
+msgid "View scan logs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:223
+#: assets/src/audit/IssueBrowser.jsx:349
+#: assets/src/components/presentation.jsx:146
+msgid "Previous"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:229
+#: assets/src/audit/IssueBrowser.jsx:355
+#: assets/src/components/presentation.jsx:155
+msgid "Next"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:241
+msgid "Audit rules"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:243
+msgid "Registered checks are shown for support and extension diagnostics. This view does not change rule behavior."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:272
+msgid "Overview"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:277
+msgid "Scans & Jobs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:282
+msgid "Audit Rules"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:287
+msgid "Logs"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:315
+msgid "Advanced on demand"
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:319
+msgid "Inspect scan activity, source coverage and system details when you need them."
+msgstr ""
+
+#: assets/src/advanced/AdvancedScreen.jsx:328
+msgid "Advanced sections"
+msgstr ""
+
+#: assets/src/api.js:20
+msgid "The server returned an unreadable response."
+msgstr ""
+
+#: assets/src/api.js:24
+msgid "Request failed. Please try again."
+msgstr ""
+
+#: assets/src/App.jsx:68
+msgid "Discard unsaved metadata changes?"
+msgstr ""
+
+#: assets/src/App.jsx:140
+msgid "Preparing file sizes…"
+msgstr ""
+
+#. translators: %d is the number of attachments still awaiting a size fact.
+#: assets/src/App.jsx:149
+#, js-format
+msgid "%d file sizes remaining…"
+msgstr ""
+
+#: assets/src/App.jsx:198
+msgid "Added to your favorites."
+msgstr ""
+
+#: assets/src/App.jsx:199
+msgid "Removed from your favorites."
+msgstr ""
+
+#: assets/src/App.jsx:227
+msgid "Folder moved."
+msgstr ""
+
+#: assets/src/App.jsx:230
+#: assets/src/App.jsx:1078
+msgid "Media moved."
+msgstr ""
+
+#: assets/src/App.jsx:269
+#: assets/src/library.js:13
+msgid "All Media"
+msgstr ""
+
+#: assets/src/App.jsx:278
+msgid "VTX Labs / WordPress Tools"
+msgstr ""
+
+#: assets/src/App.jsx:281
+#: assets/src/audit/IssueBrowser.jsx:235
+msgid "Media"
+msgstr ""
+
+#: assets/src/App.jsx:284
+msgid "A clear view of every file."
+msgstr ""
+
+#: assets/src/App.jsx:290
+msgid "WordPress Library"
+msgstr ""
+
+#: assets/src/App.jsx:294
+msgid "Upload media"
+msgstr ""
+
+#: assets/src/App.jsx:302
+msgid "VTX Media sections"
+msgstr ""
+
+#: assets/src/App.jsx:319
+msgid "Connected to WordPress"
+msgstr ""
+
+#: assets/src/App.jsx:346
+msgid "Library & folders"
+msgstr ""
+
+#: assets/src/App.jsx:351
+msgid "Library views"
+msgstr ""
+
+#: assets/src/App.jsx:361
+msgid "Uploaded in the last 30 days"
+msgstr ""
+
+#: assets/src/App.jsx:363
+msgid "Your personal favorites"
+msgstr ""
+
+#: assets/src/App.jsx:397
+#: assets/src/components/folders.jsx:366
+msgid "Folders"
+msgstr ""
+
+#: assets/src/App.jsx:400
+#: assets/src/App.jsx:445
+#: assets/src/components/folders.jsx:157
+msgid "New folder"
+msgstr ""
+
+#: assets/src/App.jsx:425
+#: assets/src/App.jsx:508
+#: assets/src/components/folders.jsx:134
+#: assets/src/components/folders.jsx:177
+msgid "Top level"
+msgstr ""
+
+#: assets/src/App.jsx:450
+msgid "Virtual folders. Original files and URLs stay in place."
+msgstr ""
+
+#: assets/src/App.jsx:459
+msgid "Media browser"
+msgstr ""
+
+#: assets/src/App.jsx:465
+#: assets/src/components/Inspector.jsx:322
+msgid "Folder"
+msgstr ""
+
+#: assets/src/App.jsx:466
+msgid "Your library"
+msgstr ""
+
+#: assets/src/App.jsx:471
+msgid "Loading media…"
+msgstr ""
+
+#. translators: %d is the attachment count.
+#: assets/src/App.jsx:473
+#, js-format
+msgid "%d item"
+msgid_plural "%d items"
+msgstr[0] ""
+msgstr[1] ""
+
+#: assets/src/App.jsx:482
+msgid "Last 30 days"
+msgstr ""
+
+#: assets/src/App.jsx:484
+msgid "Only your favorites"
+msgstr ""
+
+#: assets/src/App.jsx:493
+msgid "Edit current folder"
+msgstr ""
+
+#. translators: %d is a VTX folder ID.
+#: assets/src/App.jsx:502
+#, js-format
+msgid "Folder #%d"
+msgstr ""
+
+#: assets/src/App.jsx:515
+msgid "Delete current folder"
+msgstr ""
+
+#: assets/src/App.jsx:523
+msgid "View layout"
+msgstr ""
+
+#: assets/src/App.jsx:527
+msgid "Grid view"
+msgstr ""
+
+#: assets/src/App.jsx:533
+msgid "List view"
+msgstr ""
+
+#: assets/src/App.jsx:543
+msgid "Search media"
+msgstr ""
+
+#: assets/src/App.jsx:548
+msgid "Search names, captions, descriptions…"
+msgstr ""
+
+#: assets/src/App.jsx:559
+#: assets/src/App.jsx:562
+msgid "Sort media"
+msgstr ""
+
+#: assets/src/App.jsx:567
+msgid "Newest first"
+msgstr ""
+
+#: assets/src/App.jsx:568
+msgid "Oldest first"
+msgstr ""
+
+#: assets/src/App.jsx:569
+msgid "Name A–Z"
+msgstr ""
+
+#: assets/src/App.jsx:570
+msgid "Name Z–A"
+msgstr ""
+
+#: assets/src/App.jsx:571
+msgid "Largest first"
+msgstr ""
+
+#: assets/src/App.jsx:572
+msgid "Smallest first"
+msgstr ""
+
+#: assets/src/App.jsx:584
+#: assets/src/App.jsx:587
+#: assets/src/audit/IssueBrowser.jsx:145
+msgid "Media type"
+msgstr ""
+
+#: assets/src/App.jsx:592
+msgid "All types"
+msgstr ""
+
+#: assets/src/App.jsx:593
+#: assets/src/audit/IssueBrowser.jsx:147
+#: assets/src/library.js:14
+msgid "Images"
+msgstr ""
+
+#: assets/src/App.jsx:594
+#: assets/src/audit/IssueBrowser.jsx:148
+#: assets/src/library.js:15
+msgid "Video"
+msgstr ""
+
+#: assets/src/App.jsx:595
+#: assets/src/audit/IssueBrowser.jsx:149
+#: assets/src/library.js:16
+msgid "Audio"
+msgstr ""
+
+#: assets/src/App.jsx:596
+#: assets/src/audit/IssueBrowser.jsx:150
+#: assets/src/library.js:17
+msgid "Documents"
+msgstr ""
+
+#: assets/src/App.jsx:605
+msgid "Month"
+msgstr ""
+
+#: assets/src/App.jsx:608
+msgid "Upload month"
+msgstr ""
+
+#: assets/src/App.jsx:629
+msgid "Reset filters"
+msgstr ""
+
+#: assets/src/App.jsx:642
+#: assets/src/audit/AuditScreen.jsx:122
+#: assets/src/audit/IssueBrowser.jsx:206
+#: assets/src/components/folders.jsx:484
+msgid "Retry"
+msgstr ""
+
+#: assets/src/App.jsx:650
+msgid "Select all items on this page"
+msgstr ""
+
+#. translators: %d is the selected attachment count.
+#: assets/src/App.jsx:667
+#: assets/src/audit/IssueBrowser.jsx:179
+#, js-format
+msgid "%d selected"
+msgstr ""
+
+#: assets/src/App.jsx:673
+msgid "Select page"
+msgstr ""
+
+#: assets/src/App.jsx:683
+msgid "Move"
+msgstr ""
+
+#: assets/src/App.jsx:690
+#: assets/src/App.jsx:885
+msgid "Favorite"
+msgstr ""
+
+#: assets/src/App.jsx:697
+msgid "Unfavorite"
+msgstr ""
+
+#: assets/src/App.jsx:700
+msgid "Clear"
+msgstr ""
+
+#: assets/src/App.jsx:705
+msgid "Select a file to inspect. Drag to organize."
+msgstr ""
+
+#: assets/src/App.jsx:713
+msgid "Go to inspector"
+msgstr ""
+
+#: assets/src/App.jsx:722
+#: assets/src/components/folders.jsx:203
+#: assets/src/components/folders.jsx:246
+#: assets/src/components/folders.jsx:296
+msgid "Cancel"
+msgstr ""
+
+#: assets/src/App.jsx:730
+msgid "Loading your library…"
+msgstr ""
+
+#: assets/src/App.jsx:743
+msgid "No media here yet"
+msgstr ""
+
+#: assets/src/App.jsx:749
+msgid "Try another search or adjust your filters."
+msgstr ""
+
+#: assets/src/App.jsx:754
+msgid "Star a file to keep it close. Your favorites are personal."
+msgstr ""
+
+#: assets/src/App.jsx:759
+msgid "Move media into this folder using drag and drop or the Move action."
+msgstr ""
+
+#: assets/src/App.jsx:763
+msgid "Upload media or choose another library view."
+msgstr ""
+
+#: assets/src/App.jsx:774
+msgid "View all media"
+msgstr ""
+
+#. translators: %s is the attachment filename.
+#: assets/src/App.jsx:803
+#: assets/src/App.jsx:930
+#, js-format
+msgid "Inspect %s"
+msgstr ""
+
+#. translators: %s is the attachment filename.
+#: assets/src/App.jsx:818
+#: assets/src/App.jsx:915
+#, js-format
+msgid "Select %s"
+msgstr ""
+
+#. translators: %s is the attachment filename.
+#: assets/src/App.jsx:837
+#: assets/src/App.jsx:960
+#, js-format
+msgid "Unfavorite %s"
+msgstr ""
+
+#. translators: %s is the attachment filename.
+#: assets/src/App.jsx:844
+#: assets/src/App.jsx:964
+#, js-format
+msgid "Favorite %s"
+msgstr ""
+
+#: assets/src/App.jsx:879
+msgid "Select"
+msgstr ""
+
+#: assets/src/App.jsx:882
+#: assets/src/components/Inspector.jsx:345
+msgid "File"
+msgstr ""
+
+#: assets/src/App.jsx:883
+msgid "Size"
+msgstr ""
+
+#: assets/src/App.jsx:884
+#: assets/src/components/Inspector.jsx:318
+msgid "Uploaded"
+msgstr ""
+
+#: assets/src/App.jsx:944
+#: assets/src/components/folders.jsx:9
+#: assets/src/components/folders.jsx:216
+#: assets/src/components/Inspector.jsx:324
+#: assets/src/library.js:20
+msgid "Unorganized"
+msgstr ""
+
+#. translators: 1: First displayed item, 2: Last displayed item, 3: Total items.
+#: assets/src/App.jsx:987
+#, js-format
+msgid "%1$d–%2$d of %3$d"
+msgstr ""
+
+#: assets/src/App.jsx:995
+msgid "0 items"
+msgstr ""
+
+#: assets/src/App.jsx:1000
+msgid "Previous page"
+msgstr ""
+
+#. translators: 1: Current page, 2: Total pages.
+#: assets/src/App.jsx:1006
+#: assets/src/audit/IssueBrowser.jsx:339
+#, js-format
+msgid "Page %1$d of %2$d"
+msgstr ""
+
+#: assets/src/App.jsx:1016
+msgid "Next page"
+msgstr ""
+
+#: assets/src/App.jsx:1039
+#: assets/src/components/Inspector.jsx:105
+#: assets/src/components/Inspector.jsx:110
+msgid "Media Inspector"
+msgstr ""
+
+#: assets/src/App.jsx:1045
+msgid "Every detail, in view."
+msgstr ""
+
+#: assets/src/App.jsx:1047
+msgid "Select a file to see its information, organize it, and edit its metadata."
+msgstr ""
+
+#: assets/src/App.jsx:1053
+msgid "Your WordPress media. One clear workspace."
+msgstr ""
+
+#: assets/src/App.jsx:1064
+msgid "VTX Media · Built around your WordPress library"
+msgstr ""
+
+#: assets/src/App.jsx:1071
+msgid "Folder saved."
+msgstr ""
+
+#: assets/src/App.jsx:1092
+msgid "Folder deleted. Media files are safe."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:95
+msgid "Understand your library"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:97
+msgid "Media Health"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:99
+msgid "Metadata, accessibility review, file integrity and performance opportunities."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:111
+msgid "Close settings"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:112
+msgid "Audit settings"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:129
+msgid "Thresholds saved. Run an audit to refresh outdated results."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:139
+msgid "Loading media health…"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:150
+msgid "Media Health has not been analyzed yet."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:153
+msgid "Run an audit to review metadata, accessibility, file integrity and performance opportunities. No media files are changed."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:163
+msgid "Overall health"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:166
+#: assets/src/audit/shared.jsx:23
+msgid "Not analyzed"
+msgstr ""
+
+#. translators: First number: checked files or areas; second: total.
+#: assets/src/audit/AuditScreen.jsx:172
+#, js-format
+msgid "%1$d / %2$d files analyzed"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:179
+msgid "Files needing attention"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:181
+#: assets/src/audit/IssueBrowser.jsx:109
+msgid "Critical / High issues"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:186
+#: assets/src/audit/IssueBrowser.jsx:110
+msgid "Recommendations"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:194
+msgid "Review issues →"
+msgstr ""
+
+#. translators: First number: checked files or areas; second: total.
+#: assets/src/audit/AuditScreen.jsx:201
+#, js-format
+msgid "%1$d / %2$d files analyzed. Health reflects the files with complete, current checks."
+msgstr ""
+
+#. translators: %d: number of items indicated by the following label.
+#: assets/src/audit/AuditScreen.jsx:212
+#, js-format
+msgid "%d files await a fresh check."
+msgstr ""
+
+#. translators: %d: number of items indicated by the following label.
+#: assets/src/audit/AuditScreen.jsx:219
+#, js-format
+msgid "%d files could not be fully checked."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:226
+msgid "Categories"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:255
+#: assets/src/components/Inspector.jsx:204
+msgid "SEO & Accessibility"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:257
+msgid "Review alternative text and clear file names. Captions and attachment descriptions are optional, depending on your content and workflow."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:286
+msgid "No current open issues."
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:292
+msgid "Optional metadata"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:317
+msgid "Severity breakdown"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:335
+msgid "How health is calculated"
+msgstr ""
+
+#: assets/src/audit/AuditScreen.jsx:337
+msgid "Each complete audit starts at 100. Open issues deduct Critical 60, High 20, Medium 10, Low 3 or Info 1. Category deductions are capped at Files 80, Accessibility 30, Performance 25 and Metadata 8 (other categories 20). The score cannot fall below zero. Ignored and resolved findings deduct nothing. The library score is the rounded mean of current complete scores; serious issue counts remain visible independently."
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:49
+#: assets/src/audit/IssueBrowser.jsx:298
+msgid "confidence"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:51
+#: assets/src/audit/IssueBrowser.jsx:302
+msgid "Heuristic"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:52
+#: assets/src/audit/IssueBrowser.jsx:303
+msgid "Objective check"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:59
+#: assets/src/audit/IssueBrowser.jsx:286
+msgid "Details"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:68
+msgid "Edit metadata"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:80
+msgid "Restore issue"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:81
+msgid "Ignore"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:89
+msgid "Media health"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:94
+msgid "SEO & Accessibility review"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:107
+msgid "Decorative image — ALT intentionally left empty."
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:113
+msgid "Some checks could not finish. Re-scan this file to try again."
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:127
+msgid "Re-scan"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:140
+#: assets/src/audit/IssueBrowser.jsx:186
+msgid "Remove decorative status"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:141
+msgid "Mark as decorative"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:147
+msgid "Save metadata changes before using audit actions."
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:154
+msgid "Optional metadata improvements"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:160
+msgid "Why this score?"
+msgstr ""
+
+#: assets/src/audit/HealthSection.jsx:174
+msgid "Start at 100. Open findings deduct Critical 60, High 20, Medium 10, Low 3 or Info 1. Category limits: Files 80, Accessibility 30, Performance 25, Metadata 8; other categories 20. Ignored and resolved findings deduct nothing. Incomplete or outdated audits have no current score."
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:82
+msgid "All"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:86
+#: assets/src/audit/IssueBrowser.jsx:89
+msgid "Health issues"
+msgstr ""
+
+#. translators: %d: Number of matching findings.
+#: assets/src/audit/IssueBrowser.jsx:93
+#, js-format
+msgid "%1$d issues across %2$d files"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:100
+msgid "Loading…"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:105
+msgid "Clear issue group filter"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:116
+msgid "Search filename or title"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:123
+msgid "Category"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:130
+#: assets/src/audit/IssueBrowser.jsx:161
+msgid "Severity"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:137
+msgid "Issue type"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:141
+msgid "Status"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:151
+msgid "Text"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:154
+msgid "Advanced filters"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:155
+msgid "Confidence"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:157
+msgid "90% or above"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:158
+msgid "100%"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:160
+msgid "Sort findings"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:162
+msgid "Health score"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:163
+#: assets/src/audit/shared.jsx:73
+msgid "Filename"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:164
+msgid "Recently audited"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:172
+msgid "Current results only"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:182
+msgid "Re-scan selected"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:183
+msgid "Ignore findings"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:184
+msgid "Restore findings"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:185
+msgid "Mark decorative"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:213
+msgid "Paginated audit findings"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:222
+msgid "Select findings on this page"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:236
+msgid "Finding & recommendation"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:237
+msgid "Priority"
+msgstr ""
+
+#. translators: %s: Media filename.
+#: assets/src/audit/IssueBrowser.jsx:250
+#, js-format
+msgid "Select finding for %s"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:315
+#: assets/src/audit/shared.jsx:21
+msgid "Needs refresh"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:326
+msgid "No matching findings"
+msgstr ""
+
+#: assets/src/audit/IssueBrowser.jsx:328
+msgid "Try another filter, or scan pending media to review its health."
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:56
+msgid "Media audit scan"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:60
+msgid "Health check"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:63
+msgid "Media health check complete"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:65
+msgid "Checking media health…"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:66
+msgid "Review your library"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:76
+msgid "Audit progress"
+msgstr ""
+
+#. translators: First number: checked files or areas; second: total.
+#: assets/src/audit/ScanPanel.jsx:81
+#, js-format
+msgid "%1$d / %2$d files checked"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:92
+msgid "files couldn’t be checked — view problems"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:97
+msgid "The scan was interrupted. Resume to continue where it stopped."
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:107
+msgid "Run again"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:108
+msgid "Scan Media Library"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:120
+msgid "Resume"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:121
+msgid "Pause"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:124
+msgid "Cancel scan"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:136
+msgid "Review issues"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:143
+#: assets/src/audit/ScanPanel.jsx:145
+msgid "Batch size"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:158
+msgid "Last activity:"
+msgstr ""
+
+#. translators: Numbers: batch limit, failed items, and no-longer-eligible items.
+#: assets/src/audit/ScanPanel.jsx:164
+#, js-format
+msgid "Batch limit: %1$d · Failed: %2$d · No longer eligible: %3$d"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:175
+msgid "Load more diagnostics"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:176
+msgid "View diagnostics"
+msgstr ""
+
+#: assets/src/audit/ScanPanel.jsx:194
+msgid "No diagnostic events."
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:21
+msgid "Large image threshold (MiB)"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:28
+msgid "Very large image threshold (MiB)"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:33
+msgid "Width threshold (pixels)"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:36
+msgid "Height threshold (pixels)"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:43
+msgid "ALT length review (characters)"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:67
+msgid "Audit thresholds"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:69
+msgid "Thresholds identify opportunities for review. Changing them marks existing scores outdated; run an audit to refresh the library."
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:106
+msgid "Save thresholds"
+msgstr ""
+
+#: assets/src/audit/SettingsPanel.jsx:109
+msgid "Reset to defaults"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:4
+msgid "Critical"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:5
+msgid "High"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:6
+msgid "Medium"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:7
+msgid "Low"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:8
+msgid "Info"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:9
+msgid "Metadata"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:10
+msgid "Accessibility"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:11
+msgid "Files"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:12
+msgid "Performance"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:13
+msgid "Open"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:14
+msgid "Ignored"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:15
+msgid "Resolved"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:16
+msgid "Running"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:17
+msgid "Paused"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:18
+msgid "Cancelled"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:19
+msgid "Complete"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:20
+msgid "Incomplete"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:22
+msgid "Pending"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:24
+msgid "Analyzed"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:37
+msgid "Mark these images as decorative? This deliberately clears their WordPress ALT text. It does not change existing post HTML."
+msgstr ""
+
+#. translators: 1: Successful actions, 2: Failed actions.
+#: assets/src/audit/shared.jsx:54
+#, js-format
+msgid "%1$d updated; %2$d failed."
+msgstr ""
+
+#: assets/src/audit/shared.jsx:72
+msgid "ALT"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:74
+#: assets/src/components/Inspector.jsx:213
+msgid "Title"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:75
+#: assets/src/components/Inspector.jsx:247
+#: assets/src/components/Inspector.jsx:258
+msgid "Caption"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:76
+#: assets/src/components/Inspector.jsx:266
+#: assets/src/components/Inspector.jsx:277
+msgid "Description"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:77
+#: assets/src/components/Inspector.jsx:148
+msgid "File size"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:78
+msgid "Threshold"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:79
+msgid "Size review"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:80
+msgid "Width"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:81
+msgid "Height"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:82
+msgid "Width threshold"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:83
+msgid "Height threshold"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:84
+msgid "Characters"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:85
+msgid "Reason"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:86
+msgid "Stored dimensions"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:87
+msgid "File dimensions"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:88
+msgid "Storage verification"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:91
+msgid "Very large"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:92
+msgid "Large"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:93
+msgid "Unable to verify"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:94
+msgid "File missing"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:95
+msgid "Original file missing"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:96
+msgid "Dimensions missing or malformed"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:97
+msgid "Dimensions disagree"
+msgstr ""
+
+#: assets/src/audit/shared.jsx:100
+msgid "Empty"
+msgstr ""
+
+#: assets/src/components/AuthorFilter.jsx:28
+msgid "Author filter active"
+msgstr ""
+
+#: assets/src/components/AuthorFilter.jsx:29
+#: assets/src/components/AuthorFilter.jsx:46
+msgid "All authors"
+msgstr ""
+
+#: assets/src/components/AuthorFilter.jsx:33
+msgid "Find author"
+msgstr ""
+
+#: assets/src/components/AuthorFilter.jsx:41
+#: assets/src/components/Inspector.jsx:320
+msgid "Uploaded by"
+msgstr ""
+
+#. translators: %d is a WordPress user ID.
+#: assets/src/components/AuthorFilter.jsx:50
+#, js-format
+msgid "Author #%d"
+msgstr ""
+
+#: assets/src/components/folders.jsx:48
+msgid "Find a destination"
+msgstr ""
+
+#: assets/src/components/folders.jsx:51
+msgid "Search all folder names…"
+msgstr ""
+
+#: assets/src/components/folders.jsx:60
+msgid "Root folders are listed below. Search by name to find any nested folder."
+msgstr ""
+
+#: assets/src/components/folders.jsx:68
+msgid "Destination folders"
+msgstr ""
+
+#: assets/src/components/folders.jsx:103
+msgid "Root folder"
+msgstr ""
+
+#: assets/src/components/folders.jsx:109
+#: assets/src/components/folders.jsx:473
+msgid "Loading folders…"
+msgstr ""
+
+#: assets/src/components/folders.jsx:117
+#: assets/src/components/folders.jsx:499
+msgid "Load more folders"
+msgstr ""
+
+#: assets/src/components/folders.jsx:121
+msgid "No matching folders."
+msgstr ""
+
+#: assets/src/components/folders.jsx:125
+msgid "Destination:"
+msgstr ""
+
+#: assets/src/components/folders.jsx:157
+msgid "Edit folder"
+msgstr ""
+
+#: assets/src/components/folders.jsx:164
+msgid "Folder name"
+msgstr ""
+
+#: assets/src/components/folders.jsx:180
+msgid "Sort position"
+msgstr ""
+
+#: assets/src/components/folders.jsx:191
+msgid "Lower positions appear first. Equal positions are sorted by name."
+msgstr ""
+
+#: assets/src/components/folders.jsx:206
+#: assets/src/components/Inspector.jsx:291
+msgid "Saving…"
+msgstr ""
+
+#: assets/src/components/folders.jsx:206
+msgid "Save folder"
+msgstr ""
+
+#. translators: %d is the number of selected attachments.
+#: assets/src/components/folders.jsx:223
+#, js-format
+msgid "Move %d selected items"
+msgstr ""
+
+#: assets/src/components/folders.jsx:233
+msgid "Choose a folder for the selected media. Files and URLs stay the same."
+msgstr ""
+
+#: assets/src/components/folders.jsx:265
+msgid "Moving…"
+msgstr ""
+
+#: assets/src/components/folders.jsx:265
+msgid "Move media"
+msgstr ""
+
+#: assets/src/components/folders.jsx:276
+msgid "Delete folder?"
+msgstr ""
+
+#: assets/src/components/folders.jsx:284
+msgid "Media in this folder will become Unorganized. Child folders will move up one level. No media files will be deleted."
+msgstr ""
+
+#: assets/src/components/folders.jsx:313
+msgid "Deleting…"
+msgstr ""
+
+#: assets/src/components/folders.jsx:314
+msgid "Delete folder"
+msgstr ""
+
+#: assets/src/components/folders.jsx:366
+msgid "Subfolders"
+msgstr ""
+
+#. translators: %s is a folder name.
+#: assets/src/components/folders.jsx:410
+#, js-format
+msgid "Collapse %s"
+msgstr ""
+
+#. translators: %s is a folder name.
+#: assets/src/components/folders.jsx:414
+#, js-format
+msgid "Expand %s"
+msgstr ""
+
+#: assets/src/components/folders.jsx:438
+msgid "Direct media count"
+msgstr ""
+
+#. translators: %s is a folder name.
+#: assets/src/components/folders.jsx:446
+#, js-format
+msgid "Edit folder %s"
+msgstr ""
+
+#: assets/src/components/folders.jsx:490
+msgid "A place for every file. Create your first folder."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:82
+msgid "Metadata saved."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:112
+msgid "File details"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:116
+msgid "Close inspector"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:121
+msgid "Loading file details…"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:139
+msgid "Remove favorite"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:140
+msgid "Add favorite"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:152
+msgid "Dimensions"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:161
+msgid "No accessible local file. This media may be offloaded or missing."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:168
+msgid "File URL"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:177
+msgid "Copy URL"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:185
+msgid "Copy is unavailable. Select and copy the URL field."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:197
+msgid "URL copied."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:207
+msgid "Unsaved"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:225
+#: assets/src/components/Inspector.jsx:227
+msgid "Alternative text"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:237
+msgid "Decorative — alternative text intentionally empty."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:237
+msgid "Same as filename — review recommended."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:237
+msgid "Generic alternative text — review recommended."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:237
+msgid "Alternative text added."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:237
+msgid "Needs review — decide whether this image is meaningful or decorative."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:239
+msgid "Alternative text helps screen readers understand meaningful images and can provide image context to search engines. Leave empty when intentionally decorative."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:249
+msgid "Optional — use when it helps visitors understand the image."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:268
+msgid "Optional — useful for attachment pages or your media workflow."
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:292
+msgid "Save changes"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:306
+msgid "Reset"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:315
+msgid "Organization"
+msgstr ""
+
+#: assets/src/components/Inspector.jsx:330
+msgid "Change"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:7
+msgid "Technical details"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:22
+msgid "Not checked yet"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:28
+msgid "Date unavailable"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:47
+msgid "Just now"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:124
+msgid "Close details"
+msgstr ""
+
+#: assets/src/components/presentation.jsx:135
+msgid "Results"
+msgstr ""
+
+#: assets/src/components/ui.jsx:26
+msgid "Unknown size"
+msgstr ""
+
+#: assets/src/components/ui.jsx:96
+msgid "Close dialog"
+msgstr ""
+
+#: assets/src/library.js:18
+msgid "Favorites"
+msgstr ""
+
+#: assets/src/library.js:19
+msgid "Recently Added"
+msgstr ""

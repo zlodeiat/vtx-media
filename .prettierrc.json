@@ -1,0 +1,5 @@
+{
+  "overrides": [
+    {"files": "*.php", "options": {"plugins": ["@prettier/plugin-php"], "phpVersion": "7.4"}}
+  ]
+}

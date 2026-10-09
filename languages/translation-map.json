@@ -1,0 +1,19 @@
+{
+  "assets/src/App.jsx": "assets/dist/admin.js",
+  "assets/src/admin.jsx": "assets/dist/admin.js",
+  "assets/src/advanced/AdvancedScreen.jsx": "assets/dist/admin.js",
+  "assets/src/api.js": "assets/dist/admin.js",
+  "assets/src/audit/AuditScreen.jsx": "assets/dist/admin.js",
+  "assets/src/audit/HealthSection.jsx": "assets/dist/admin.js",
+  "assets/src/audit/IssueBrowser.jsx": "assets/dist/admin.js",
+  "assets/src/audit/ScanPanel.jsx": "assets/dist/admin.js",
+  "assets/src/audit/SettingsPanel.jsx": "assets/dist/admin.js",
+  "assets/src/audit/shared.jsx": "assets/dist/admin.js",
+  "assets/src/components/AuthorFilter.jsx": "assets/dist/admin.js",
+  "assets/src/components/Inspector.jsx": "assets/dist/admin.js",
+  "assets/src/components/folders.jsx": "assets/dist/admin.js",
+  "assets/src/components/presentation.jsx": "assets/dist/admin.js",
+  "assets/src/components/ui.jsx": "assets/dist/admin.js",
+  "assets/src/extensions.js": "assets/dist/admin.js",
+  "assets/src/library.js": "assets/dist/admin.js"
+}

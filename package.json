@@ -1,0 +1,31 @@
+{
+  "name": "vtx-media",
+  "version": "1.5.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "lint": "eslint assets/src tests/*.mjs",
+    "test:integration": "wp eval-file tests/integration.php --allow-root",
+    "test:browser": "node tests/browser.mjs",
+    "test:scale": "wp eval-file tests/scale.php --allow-root",
+    "test:lifecycle": "node tests/lifecycle.mjs",
+    "test:visual": "node tests/visual.mjs",
+    "format": "prettier --write assets/src tests/*.mjs build.mjs eslint.config.mjs",
+    "test:drag": "node tests/drag.mjs",
+    "format:php": "prettier --write \"app/**/*.php\" vtx-media.php uninstall.php \"tests/*.php\"",
+    "test:audit": "wp eval-file tests/audit.php --allow-root",
+    "test:audit-browser": "node tests/audit-browser.mjs",
+    "test:audit-scale": "wp eval-file tests/audit-scale.php --allow-root",
+    "test:entitlements": "wp eval-file tests/entitlements.php --allow-root"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@eslint/js": "^9.0.0",
+    "@playwright/test": "^1.58.0",
+    "@prettier/plugin-php": "^0.25.0",
+    "esbuild": "^0.25.0",
+    "eslint": "^9.0.0",
+    "globals": "^16.0.0",
+    "prettier": "^3.9.6"
+  }
+}

@@ -1,0 +1,23 @@
+# Local dependencies and generated test evidence
+/node_modules/
+/tests/artifacts/*
+!/tests/artifacts/.gitkeep
+/release/
+/coverage/
+/playwright-report/
+/test-results/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE, OS and log files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log*

@@ -1,0 +1,627 @@
+/* Shared VTX presentation layer. Every selector is confined to the VTX application. */
+.vtx-media {
+  --vm-surface: #fff;
+  --vm-accent-ink: #b33c0e;
+  --vm-success: #21623e;
+  --vm-warning: #855413;
+  --vm-radius: 10px;
+  --vm-space: 16px;
+  --vm-panel-padding: 20px;
+  --vm-shadow: 0 1px 2px rgb(17 24 39 / 3%);
+}
+.vtx-media :is(.vm-kicker, .vm-eyebrow) {
+  color: var(--vm-accent-ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.5;
+}
+.vtx-media .vm-page-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  margin: 0 0 22px;
+}
+.vtx-media .vm-page-header h2 {
+  font-size: 25px;
+  line-height: 1.3;
+  margin: 4px 0 7px;
+  letter-spacing: -0.025em;
+}
+.vtx-media .vm-page-header p {
+  margin: 0;
+  color: var(--vm-muted);
+  max-width: 75ch;
+  font-size: 13px;
+  line-height: 1.6;
+}
+.vtx-media .vm-page-header > div:first-child {
+  min-width: 0;
+}
+.vtx-media :is(.vm-audit-app, .vmi-analytics) {
+  padding: 24px;
+  background: var(--vm-soft);
+}
+.vtx-media .vm-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+.vtx-media .vm-section-header :is(h3, h4) {
+  margin: 3px 0 0;
+  font-size: 16px;
+  line-height: 1.4;
+}
+.vtx-media .vm-section-header p {
+  margin: 6px 0 0;
+  color: var(--vm-muted);
+}
+.vtx-media
+  :is(
+    .vm-card-panel,
+    .vm-scan-panel,
+    .vm-audit-settings,
+    .vm-issue-browser,
+    .vmo-app .vmo-run,
+    .vmo-browser,
+    .vmo-storage,
+    .vmai-job,
+    .vmc-job,
+    .vm-advanced-panel
+  ) {
+  padding: var(--vm-panel-padding);
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  background: var(--vm-surface);
+  box-shadow: var(--vm-shadow);
+  min-width: 0;
+}
+.vtx-media .vm-card-body > :first-child {
+  margin-top: 0;
+}
+.vtx-media .vm-card-body > :last-child {
+  margin-bottom: 0;
+}
+.vtx-media :is(.vm-card-actions, .vm-action-bar) {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+.vtx-media .vm-card-actions {
+  border-top: 1px solid var(--vm-line);
+  padding-top: 14px;
+  margin-top: 18px;
+}
+.vtx-media :is(.vm-panel-grid, .vm-audit-breakdowns) {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+  margin: 20px 0;
+}
+.vtx-media
+  :is(.vm-metric-grid, .vm-health-cards, .vmo-cards, .vmc-cards, .vmai-cards) {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 12px;
+  margin: 20px 0 12px;
+}
+.vtx-media .vm-metric {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  text-align: left;
+  padding: 18px;
+  background: var(--vm-surface);
+  color: var(--vm-ink);
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  box-shadow: var(--vm-shadow);
+  min-width: 0;
+}
+.vtx-media .vm-metric:first-child {
+  border-top: 1px solid var(--vm-line);
+  padding-top: 18px;
+}
+.vtx-media .vm-metric strong {
+  font-size: 28px;
+  line-height: 1.25;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+.vtx-media .vm-metric span {
+  display: block;
+  min-height: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--vm-ink);
+}
+.vtx-media .vm-metric small {
+  color: var(--vm-muted);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.vtx-media button.vm-metric:hover {
+  border-color: var(--vm-blue);
+  background: var(--vm-soft);
+}
+.vtx-media .vm-metric[aria-pressed="true"] {
+  border-color: var(--vm-blue);
+  box-shadow: inset 0 0 0 1px var(--vm-blue);
+}
+.vtx-media .vm-data-list {
+  display: block;
+  margin: 0;
+}
+.vtx-media .vm-data-list > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--vm-line);
+}
+.vtx-media .vm-data-list > div:last-child {
+  border: 0;
+}
+.vtx-media .vm-data-list dt {
+  color: var(--vm-muted);
+  min-width: 0;
+}
+.vtx-media .vm-data-list dd {
+  margin: 0;
+  text-align: right;
+  font-weight: 600;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.vtx-media .vm-data-action {
+  background: none;
+  border: 0;
+  padding: 0;
+  color: var(--vm-blue);
+  font-weight: 600;
+}
+.vtx-media .vm-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  background: #f0f3f7;
+  color: #526075;
+}
+.vtx-media .vm-status::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  background: currentColor;
+  border-radius: 50%;
+  flex: none;
+}
+.vtx-media .vm-status-success {
+  color: var(--vm-success);
+  background: #eef7f0;
+}
+.vtx-media .vm-status-warning {
+  color: var(--vm-warning);
+  background: #fff6e6;
+}
+.vtx-media .vm-status-danger {
+  color: var(--vm-danger);
+  background: #fff0ee;
+}
+.vtx-media .vm-status-info {
+  color: #2e4aac;
+  background: #eef2ff;
+}
+.vtx-media .vm-empty-state {
+  padding: 16px 0;
+}
+.vtx-media .vm-empty-state :is(h3, h4) {
+  font-size: 16px;
+  margin: 0 0 6px;
+}
+.vtx-media .vm-empty-state p {
+  margin: 0 0 12px;
+  max-width: 70ch;
+  color: var(--vm-muted);
+}
+.vtx-media .vm-score-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--vm-ink);
+  margin: 0 0 12px;
+}
+.vtx-media .vm-score-value small {
+  font-size: 13px;
+  font-weight: 400;
+  color: var(--vm-muted);
+}
+.vtx-media :is(.vm-button, .vm-secondary-nav button) {
+  border-radius: 6px;
+  min-height: 34px;
+  padding: 7px 12px;
+  box-shadow: none;
+}
+.vtx-media .vm-button.vm-primary {
+  background: var(--vm-blue);
+  color: #fff;
+  border-color: var(--vm-blue);
+}
+.vtx-media .vm-button.vm-primary:hover {
+  background: var(--vm-blue-hover);
+}
+.vtx-media :is(.vm-danger, .vmc-danger, .vmo-danger) {
+  color: var(--vm-danger);
+  border-color: #e5b9b5;
+  background: #fff;
+}
+.vtx-media :is(.vm-danger, .vmc-danger, .vmo-danger):hover {
+  background: #fff0ee;
+}
+.vtx-media
+  :is(.vm-toolbar, .vmai-toolbar, .vmc-toolbar, .vmp-filters, .vmo-filters) {
+  gap: 12px;
+  align-items: end;
+  margin: 16px 0;
+}
+.vtx-media :is(.vm-selection-bar, .vmc-selection) {
+  border-radius: 6px;
+  background: #eef2ff;
+  color: var(--vm-ink);
+}
+.vtx-media
+  :is(.vm-audit-app, .vm-drawer)
+  input:not([type="checkbox"]):not([type="radio"]),
+.vtx-media :is(.vm-audit-app, .vm-drawer) select {
+  min-height: 36px;
+  border-color: #b6c2d2;
+  border-radius: 6px;
+}
+.vtx-media :is(.vm-audit-app, .vm-drawer) textarea {
+  border-color: #b6c2d2;
+  border-radius: 6px;
+}
+.vtx-media
+  :is(
+    .vm-table,
+    .vmi-table,
+    .vm-audit-table,
+    .vmp-table,
+    .vmo-table,
+    .vmai-table
+  )
+  th {
+  background: var(--vm-soft);
+  color: var(--vm-muted);
+  font-size: 12px;
+}
+.vtx-media
+  :is(
+    .vm-table,
+    .vmi-table,
+    .vm-audit-table,
+    .vmp-table,
+    .vmo-table,
+    .vmai-table
+  )
+  :is(th, td) {
+  border-color: var(--vm-line);
+}
+.vtx-media table tbody tr:hover {
+  background: var(--vm-soft);
+}
+.vtx-media :is(.vm-technical, .vm-score-help) {
+  border-top: 1px solid var(--vm-line);
+  padding-top: 10px;
+  margin-top: 14px;
+}
+.vtx-media :is(.vm-technical, .vm-score-help) summary {
+  font-size: 12px;
+  color: var(--vm-muted);
+  cursor: pointer;
+  padding: 4px 0;
+}
+.vtx-media :is(.vm-drawer, .vm-dialog) {
+  border: 1px solid var(--vm-line);
+  border-radius: 12px;
+  color: var(--vm-ink);
+}
+.vtx-media :is(.vm-drawer, .vm-dialog) > header {
+  background: var(--vm-soft);
+  border-bottom: 1px solid var(--vm-line);
+  padding: 18px 20px;
+}
+.vtx-media .vm-drawer-body {
+  padding: 20px;
+}
+.vtx-media :is(.vm-inspector section, .vm-health-section) {
+  border-color: var(--vm-line);
+}
+.vtx-media .vm-inspector :is(h3, h4) {
+  font-size: 13px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.vtx-media .vm-inspector .vm-section-heading {
+  color: var(--vm-accent-ink);
+}
+.vtx-media :is(.vmai-warning, .vmc-warning) {
+  background: #fff7e9;
+  border: 1px solid #ead9b7;
+  border-left: 3px solid var(--vm-warning);
+  border-radius: 6px;
+  color: var(--vm-warning);
+}
+.vtx-media :is(.vm-error, .vm-audit-app > [role="alert"]) {
+  background: #fff1ef;
+  border: 1px solid #edc7c1;
+  border-radius: 6px;
+  color: var(--vm-danger);
+  padding: 12px;
+}
+.vtx-media :is(.vm-scan-panel, .vmo-run, .vmc-job, .vmai-job) progress {
+  height: 8px;
+  width: 100%;
+  accent-color: var(--vm-blue);
+}
+.vtx-media :is(.vm-audit-empty, .vmai-empty, .vmc-empty) {
+  padding: 24px;
+  min-height: 0;
+  background: var(--vm-soft);
+  border-radius: var(--vm-radius);
+}
+@media (max-width: 1100px) {
+  .vtx-media
+    :is(
+      .vm-metric-grid,
+      .vm-health-cards,
+      .vmo-cards,
+      .vmc-cards,
+      .vmai-cards
+    ) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 780px) {
+  .vtx-media :is(.vm-panel-grid, .vm-audit-breakdowns) {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 520px) {
+  .vtx-media {
+    --vm-panel-padding: 16px;
+  }
+  .vtx-media :is(.vm-audit-app, .vmi-analytics) {
+    padding: 18px 12px;
+  }
+  .vtx-media .vm-page-header {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .vtx-media
+    :is(
+      .vm-metric-grid,
+      .vm-health-cards,
+      .vmo-cards,
+      .vmc-cards,
+      .vmai-cards
+    ) {
+    grid-template-columns: 1fr;
+  }
+  .vtx-media .vm-metric {
+    padding: 15px;
+  }
+  .vtx-media .vm-metric strong {
+    font-size: 26px;
+  }
+  .vtx-media .vm-data-list > div {
+    gap: 10px;
+  }
+}
+/* Compact settings and review structures share tokens without becoming dashboards. */
+.vtx-media .vmi-editor > fieldset {
+  margin: 0;
+  padding: 16px;
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  background: var(--vm-soft);
+}
+.vtx-media .vmi-editor legend,
+.vtx-media .vmi-permission-group legend {
+  color: var(--vm-accent-ink);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  padding: 0 6px;
+}
+.vtx-media .vmi-permission-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.vtx-media .vmi-permission-group {
+  padding: 12px 0;
+  margin: 0;
+  border: 0;
+  border-top: 1px solid var(--vm-line);
+  min-width: 0;
+}
+.vtx-media .vmi-permission-group label {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 10px 0;
+}
+.vtx-media .vmai-suggestion {
+  padding: 16px;
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  background: var(--vm-surface);
+}
+.vtx-media .vm-comparison {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin: 12px 0;
+}
+.vtx-media .vm-comparison > div {
+  background: var(--vm-soft);
+  border: 1px solid var(--vm-line);
+  border-radius: 6px;
+  padding: 12px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+.vtx-media .vm-comparison > .vmai-proposed {
+  border-color: #c1cdf2;
+  background: #f6f8ff;
+}
+.vtx-media .vm-comparison > div > span {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--vm-muted);
+}
+.vtx-media .vm-comparison p {
+  margin-bottom: 0;
+}
+.vtx-media .vmai-suggestion header {
+  margin-bottom: 12px;
+}
+.vtx-media .vmai-suggestion header h4 {
+  margin: 0;
+}
+.vtx-media .vm-inspector .vm-comparison {
+  grid-template-columns: 1fr;
+}
+.vtx-media .vm-inspector :is(.vmo-section, .vmc-inspector, .vmai-inspector) {
+  border-top: 1px solid var(--vm-line);
+  padding-top: 16px;
+  margin-top: 16px;
+}
+.vtx-media .vm-inspector :is(.vm-health-heading, .vmp-heading, h3) {
+  color: var(--vm-accent-ink);
+}
+.vtx-media :is(.vm-sidebar, .vm-inspector) {
+  background: var(--vm-surface);
+}
+.vtx-media :is(.vm-inspector, .vm-drawer) :is(p, dd, code) {
+  overflow-wrap: anywhere;
+}
+.vtx-media :is(.vmi-muted, .vm-coverage, .vmai-note, .vmc-muted) {
+  color: var(--vm-muted);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.vtx-media .vm-advanced-panel > section > h3 {
+  margin-top: 0;
+  font-size: 17px;
+}
+.vtx-media :is(.vmi-automation-row, .vmi-log) {
+  gap: 16px;
+  padding: 16px 0;
+  border-color: var(--vm-line);
+}
+.vtx-media :is(.vmi-actions, .vmai-actions, .vmc-actions) {
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.vtx-media :is(button, a, input, select, textarea, summary):focus-visible {
+  outline: 2px solid var(--vm-blue);
+  outline-offset: 3px;
+}
+@media (max-width: 1100px) {
+  .vtx-media .vmi-permission-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (max-width: 520px) {
+  .vtx-media :is(.vm-comparison, .vmi-permission-grid) {
+    grid-template-columns: 1fr;
+  }
+}
+.vtx-media .vm-module-nav button[aria-current] {
+  border-bottom-color: var(--vm-blue);
+  color: var(--vm-blue);
+}
+.vtx-media .vm-metric {
+  font: inherit;
+}
+.vtx-media .vm-metric strong {
+  margin: 0;
+}
+.vtx-media .vmc-storage {
+  border: 1px solid var(--vm-line);
+  border-radius: var(--vm-radius);
+  background: var(--vm-surface);
+  padding: 18px;
+  gap: 20px;
+}
+.vtx-media .vmc-duplicate {
+  border-color: var(--vm-line);
+  border-radius: var(--vm-radius);
+}
+.vtx-media .vm-comparison > div {
+  margin: 0;
+}
+.vtx-media .vm-inspector .vm-inspector-title h3 {
+  color: var(--vm-ink);
+}
+/* Existing module status classes retain their labels and state decisions. */
+.vtx-media .vmp-status {
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+  font-weight: 600;
+  background: #f0f3f7;
+  color: #526075;
+}
+.vtx-media :is(.vmp-status.vmp-used, .vmp-status.vmp-valid) {
+  color: var(--vm-success);
+  background: #eef7f0;
+}
+.vtx-media .vmp-status.vmp-possibly_used {
+  color: var(--vm-warning);
+  background: #fff6e6;
+}
+.vtx-media :is(.vmp-status.vmp-broken_reference, .vmp-status.vmp-broken) {
+  color: var(--vm-danger);
+  background: #fff0ee;
+}
+.vtx-media .vm-diagnostics-facts {
+  max-width: 640px;
+  font-size: 13px;
+}
+.vtx-media .vmi-editor .vmi-check {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+}
+.vtx-media .vmc-search {
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 6px;
+  max-width: 360px;
+}
+.vtx-media .vm-page-header .vm-kicker {
+  color: var(--vm-accent-ink);
+  font-size: 11px;
+}
+@media(max-width:1100px) {
+  .vtx-media .vm-workspace-bar > small { display:none; }
+  .vtx-media .vm-module-nav { gap:16px; }
+  .vtx-media .vm-module-nav button { white-space:nowrap; flex-shrink:0; }
+}
